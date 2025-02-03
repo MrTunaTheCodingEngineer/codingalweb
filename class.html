@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Hello, World!</title>
+<link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+    <h1>Class</h1>
+
+    <p id="student1"></p>
+    <p id="student2"></p>
+
+    <script>
+
+        class student{
+            constructor (name, year){
+            this.name = name;
+            this.year = year;
+    }
+
+    age(){
+
+        let date = new Date()
+        return Date.getFullyear() - this.year;
+ }
+}
+
+    student1 = new student ("Defne", 2010)
+    document.getElementById("student1").innerHTML="My name is" + student1.name + ",i was born in" + student1.year + "and my age is" + student1.age();
+
+    student2 = new student ("Jenna", 2009)
+    document.getElementById("student2").innerHTML="My name is" + student2.name + ",i was born in" + student2.year + "and my age is" + student2.age();
+
+
+
+    
+
+
+
+
+
+
+
+
+
+
+    </script>
+
+
+
+
+</body>
+</html>
