@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Hello, World!</title>
+<link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+
+    <p id="result"></p>
+    <p id="result2"></p>
+    <p id="result3"></p>
+
+    <script>
+
+        var myObj = {name : "Ryan", age : 14 , grade : 11};
+        var myJSON = JSON.stringify(myObj);
+        var newObj = JSON.parse(myJSON);
+        document.getElementById("result").innerHTML = newObj .name;
+        document.getElementById("result2").innerHTML = newObj .age;
+
+        async function add(a,b){
+            let response = await a + b;
+            display(response);
+        }
+
+        function display (some){
+            document.getElementById("result").innerHTML = some;
+
+        }
+        add (6,13);
+        
+
+
+
+
+
+    </script>
+
+
+
+
+
+
+
+</body>
+</html>
