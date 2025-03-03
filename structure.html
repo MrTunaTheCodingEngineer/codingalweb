@@ -1,10 +1,66 @@
 <!DOCTYPE html>
 <html>
 <head>
-<title>dave's hot chicken</title>
+<title>Hello, World!</title>
 <link rel="stylesheet" href="styles.css" />
+<script>
+
+    function ValidateForm(){
+        var x = document.forms["myForm"]["fname"].value;
+        if (x == ""){
+            alert("name must be filled out");
+            return false;
+
+        }
+        else document.write("Form Submitted")
+    }
+</script>
 </head>
 <body>
-<h1>welcome to dave's hot chciken</h1>
+
+
+<h1>Contact Us </h1>
+
+<form name="myForm" onsubmit="ValidateForm()">
+<fieldset>
+
+    <label>Name</label>
+
+    <input type="text" name="fname" placeholder="Enter Name Here" id="name"><br>
+
+    <label>Email</label>
+
+    <input type="text" placeholder="username123@gmail.com" id="mail"><br>
+
+    <label>Password</label><br>
+
+    <input type="password" placeholder="12345678910" id="password"><br>
+
+    <label>Gender</label><br>
+
+    <input type="radio" id="male" name="gender" value="Male">Male<br>
+
+    <input type="radio" id="female" name="gender" value="Female">Female<br>
+
+    <label> favourite City</label><br>
+
+    <input type="checkbox" id="City" value="Pamukale">Pamukale<br>
+
+    <input type="checkbox" id="City" value="Ankara">Ankara<br>
+
+    <label>Birthday</label><br>
+
+    <input type="date" id="Birthday" name="Birthday"><br>
+
+    <input type="Submit" value="Submit"> 
+
+
+
+</fieldset>
+
+</form>
+
+
+
 </body>
 </html>
