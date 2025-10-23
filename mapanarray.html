@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Hello, World!</title>
+<link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+
+    <p>Multiply Every number in the array by 2</p>
+    <p id ="Value" ></p>
+    <script>
+        var numbers = [27,19,4,75,13]
+        function myFunction(num){
+            return num * 2;
+        }
+        var newarray = numbers.map(myFunction);
+         
+        document.getElementById("Value").innerHTML = newarray;
+
+    </script>
+</body>
+</html>
